@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.parivente.beans.Bdd;
+
 
 @WebServlet("/home")
 public class Home extends HttpServlet {
@@ -26,17 +28,17 @@ public class Home extends HttpServlet {
 		
 
 		
-		request.setAttribute("stringHtml",readFile(request));
+		request.setAttribute("stringHtml",readFile2(request));
 	this.getServletContext().getRequestDispatcher("/WEB-INF/home.jsp").forward(request,response);
 	}
 	
 	String FILENAME = new String ("C:\\Users\\Administrateur\\Desktop\\Formation_POE\\ParisVentes\\WebContent\\articles.txt");
 
-	public String readFile(HttpServletRequest request) {
+	public String readFile2(HttpServletRequest request) {
 		String listArtHtlm = new String();
-				try {
-					List<String> allLines = Files.readAllLines(Paths.get(FILENAME));
-				for (String line : allLines) {
+		Bdd bdd = new Bdd (FILENAME);
+				
+				for (String line : bdd.readFile()) {
 					String[] arr =null;
 							arr = line.split("\\|");
 							String html = "<div><article><h4>";
@@ -49,11 +51,7 @@ public class Home extends HttpServlet {
 							html = html + arr[4]+"€ </span></article></div>";
 					listArtHtlm = listArtHtlm + html;
 					System.out.println(listArtHtlm);
-					
-				}
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+				} 
 				return listArtHtlm;
 		}
 	

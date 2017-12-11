@@ -32,4 +32,7 @@ public class articles {
 	public void setPrix(Integer prix) {
 		this.prix = prix;
 	}
+	
+	
+	
 }

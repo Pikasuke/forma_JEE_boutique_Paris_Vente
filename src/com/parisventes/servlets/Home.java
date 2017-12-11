@@ -43,7 +43,8 @@ public class Home extends HttpServlet {
 							html = html + arr[1]+"</h4><figure><a id=\"";
 							html = html + arr[0]+"\" href=\""+request.getContextPath()+"/article?id=";
 							html = html + arr[0]+"\"><img src=\""+request.getContextPath()+"/img/";
-							html = html + arr[2]+"\" alt=\"Morrigan\"></a><figcaption>";
+							html = html + arr[2]+"\" alt=\"";
+							html = html + arr[3]+"\"></a><figcaption>";
 							html = html + arr[3]+"</figcaption></figure><span>";
 							html = html + arr[4]+"€ </span></article></div>";
 					listArtHtlm = listArtHtlm + html;

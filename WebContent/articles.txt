@@ -2,4 +2,4 @@
 2|Cosplay02|02.jpg|Cosplay Mai|200
 3|Cosplay03|03.jpg|Cosplay Laura|300
 4|Cosplay04|04.jpg|Cosplay Cammi|400
-5|Cosplay05|05.jpg|Cosplay |500
+5|Cosplay05|05.jpg|Cosplay Black Cat|500

@@ -6,7 +6,7 @@
 		
 		<section>
 		
-		_uhjk,no^ùpo^*p:lmù$
+			${htmlArticleSimple}
 		
 		</section>
 				

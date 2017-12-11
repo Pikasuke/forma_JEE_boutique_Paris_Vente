@@ -1,0 +1,4 @@
+1|Cosplay01|01.jpg|Cosplay Morrigan|100
+2|Cosplay02|02.jpg|Cosplay Mai|200
+3|Cosplay03|03.jpg|Cosplay Laura|300
+4|Cosplay04|04.jpg|Cosplay Cammi|400

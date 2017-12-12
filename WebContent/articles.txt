@@ -1,5 +1,5 @@
-1|Cosplay01|01.jpg|Cosplay Morrigan|100
-2|Cosplay02|02.jpg|Cosplay Mai|200
-3|Cosplay03|03.jpg|Cosplay Laura|300
-4|Cosplay04|04.jpg|Cosplay Cammi|400
-5|Cosplay05|05.jpg|Cosplay Black Cat|500
+1|Cosplay 01|01.jpg|Cosplay Morrigan|100
+2|Cosplay 02|02.jpg|Cosplay Mai|200
+3|Cosplay 03|03.jpg|Cosplay Laura|300
+4|Cosplay 04|04.jpg|Cosplay Cammi|400
+5|Cosplay 05|05.jpg|Cosplay Black Cat|500

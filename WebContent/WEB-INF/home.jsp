@@ -5,62 +5,29 @@
 
 		
 		<section>
-			<%--   <article>
-           		<h4>Article 01</h4>
+			<c:forEach items="${listArticle}" var="articletoto" >
+			<div>
+			  <article>
+           		<h4>${articletoto.nom}</h4>
                		<figure>
-	                   <a href="">
-	                       <img src="${pageContext.request.contextPath}/img/01.jpg" alt="Morrigan">
-                      
+	                   <a id= "${articletoto.id}" href="${pageContext.request.contextPath}/article?id=${articletoto.id}">
+	                       <img src="${pageContext.request.contextPath}/img/${articletoto.lien}" alt="${articletoto.description}">
 	                   </a>
-              		 <figcaption>Morrigan Cosplay</figcaption>
+              		 <figcaption>${articletoto.description}</figcaption>
               		 </figure>
-           	   	<span>100 € </span>
-      		 </article>
-
-			<article>
-           		<h4>Article 02</h4>
-               		<figure>
-	                   <a href="">
-	                       <img src="${pageContext.request.contextPath}/img/02.jpg" alt="Mai">
-	                   </a>
-              		 <figcaption>Mai Cosplay</figcaption>
-              		 </figure>
-           	   	<span>200 $ </span>
-      		 </article>
-      		 
-       		
-       		<article>
-           		<h4>Article 03</h4>
-               		<figure>
-	                   <a href="">
-	                       <img src="${pageContext.request.contextPath}/img/03.jpg" alt="Laura">
-	                   </a>
-              		 <figcaption>Laura Cosplay</figcaption>
-              		 </figure>
-           	   	<span>300 £ </span>
-      		 </article>
-       		
-       		<article>
-           		<h4>Article 04/h4>
-               		<figure>
-	                   <a href="">
-	                       <img src="${pageContext.request.contextPath}/img/04.jpg"  alt="Cammi">
-	                   </a>
-              		 <figcaption>Cammi Cosplay</figcaption>
-              		 </figure>
-           	   	<span>400 ¤</span>
-      		 </article> --%>
-      		 
-      		 ${stringHtml}
-
+           	   	<span>${articletoto.prix} € </span>
+      		  </article>
+      		 </div>
+      		 </c:forEach>
 		</section>
 		
-		
-		
-		<section>
-		
-		</section>
-		
+			<section>
+				
+
+			</section>
+      		 
+      		
+				
 		<%@ include file="layouts/footer.jsp" %>
 	</body>
 </html>

@@ -16,7 +16,7 @@ import com.parivente.beans.Article;
 import com.parivente.beans.Bdd;
 
 
-@WebServlet("/home")
+//@WebServlet("/home")
 public class Home extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -30,7 +30,7 @@ public class Home extends HttpServlet {
 		String FILENAME = new String ("C:\\Users\\Administrateur\\Desktop\\Formation_POE\\ParisVentes\\WebContent\\articles.txt");
 		Bdd bdd = new Bdd (FILENAME); //creer la classe bdd pour utiliser readfile, et lui donner l'attribut filename
 		Article article = new Article();
-		article.setRequest(request);
+		//article.setRequest(request);
 		request.setAttribute("listArticle", article.tousLesArticles(bdd.readFile()));
 		
 		//request.setAttribute("stringHtml",readFile2(request));

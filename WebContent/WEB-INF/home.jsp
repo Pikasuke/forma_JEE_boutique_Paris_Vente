@@ -29,5 +29,4 @@
       		
 				
 		<%@ include file="layouts/footer.jsp" %>
-	</body>
-</html>
+		

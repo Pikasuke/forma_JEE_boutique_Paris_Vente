@@ -13,14 +13,14 @@ import com.parivente.beans.Bdd;
 /**
  * Servlet implementation class article
  */
-@WebServlet("/article")
-public class articles extends HttpServlet {
+//@WebServlet("/article")
+public class Articles extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public articles() {
+	public Articles() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -37,7 +37,7 @@ public class articles extends HttpServlet {
 
 		
 		Article article = new Article();//creer la classe Article pour utiliser split et touLesArticles
-		article.setRequest(request);
+		//article.setRequest(request);
 		Bdd bdd = new Bdd (FILENAME); //creer la classe bdd pour utiliser readfile, et lui donner l'attribut filename
 		request.setAttribute("ArticleSimple", article.unSeulArticle(bdd.readFile(), articleId));
 		

@@ -8,21 +8,30 @@
 		
 			<form id="login" method="post">
 				<input type="texte" id="mail" name ="mail"><label>email</label> <br>
-				<input type="password" id="passe" name ="passe"><label>mot de passe</label><br>
+				<input type="password" id="passe" name ="pass"><label>mot de passe</label><br>
 				<input type="submit" id="b1" name="envoi" value="Envoyer">
-				${sessionScope.email}
-				${sessionScope.pass}<br>
+				
+			<%-- 	${sessionScope.pass}<br> --%>
 				<br>
-				<c:out value="${sessionScope.email}" >hello</c:out>
+			<%-- 	<c:out value="${sessionScope.email}" >hello</c:out> --%>
 				<br>
+			<%-- 	<c:out value="${sessionScope.islog}">Pas logger</c:out> --%>
+					<c:out value="${sessionScope.logger}">Pas logger</c:out>
 				<br>
-				<c:if test="${ 15 le 20 }">il est plus grand</c:if>
+				<c:out value="${sessionScope.email}"></c:out>
+	<%-- 			<c:if test="${ 15 le 20 }">il est plus grand</c:if> --%>
 			</form>
+			<form  method="POST">
+				<input type="submit" id="delog" name="delog" value="logout">
+			</form>
+				<br><br><br>
+			
+			
 				<form method="GET">
 					<input type="text" name="age">
 					<input type="submit">
 				</form>
-				<c:choose>
+				<%-- <c:choose>
 						<c:when test="${ ageee == null || ageee == 0 || ageee <0 }">pas renseigné</c:when>
 					    <c:when test="${ ageee < 10 }">enfant</c:when>
 					    <c:when test="${ ageee >=10 && ageee<=18  }">Ado</c:when>
@@ -40,7 +49,7 @@
 				<br>
 				<c:forTokens var="var" items="Un élément/Encore un autre élément/Un dernier pour la route" delims="/">
     					<p>${ var }</p>
-				</c:forTokens>
+				</c:forTokens> --%>
 		</section>
 				
 		<section>

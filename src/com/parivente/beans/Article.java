@@ -11,7 +11,7 @@ public class Article {
 	private String lien;
 	private String description;
 	private float prix;
-	private HttpServletRequest request;
+	//private HttpServletRequest request;
 
 	
 	
@@ -47,12 +47,12 @@ public class Article {
 		this.prix = prix;
 	}
 	
-	public HttpServletRequest getRequest() {
-		return request;
-	}
-	public void setRequest(HttpServletRequest request) {
-		this.request = request;
-	}
+//	public HttpServletRequest getRequest() {
+//		return request;
+//	}
+//	public void setRequest(HttpServletRequest request) {
+//		this.request = request;
+//	}
 	
 	String FILENAME = new String ("C:\\Users\\Administrateur\\Desktop\\Formation_POE\\ParisVentes\\WebContent\\articles.txt");
 	Bdd bdd = new Bdd (FILENAME); //creer la classe bdd pour utiliser readfile, et lui donner l'attribut filename
